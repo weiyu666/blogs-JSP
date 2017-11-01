@@ -1,0 +1,134 @@
+A:link { COLOR: #000000; FONT-SIZE: 12px; TEXT-DECORATION: none;}
+A:visited { COLOR: #000000; FONT-SIZE: 12px; TEXT-DECORATION: none}
+A:hover { COLOR: #006CD9; FONT-SIZE: 12px; TEXT-DECORATION: none}
+BODY { FONT-SIZE: 12px;}
+TD { FONT-SIZE: 14px; line-height: 200%;}
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+img{ border:0px;}
+
+.input{
+    height:15px;
+	background-color: #ffffff;
+	font-size: 12px;
+	color: #615e55;
+  }
+  
+  
+.select{
+    height:16px;
+	background-color: #ffffff;
+	font-size: 12px;
+	color: #615e55;
+  }
+
+.select2{
+    height:14px;
+	background-color: #ffffff;
+	font-size: 12px;
+	color: #615e55;
+  }
+
+.f12_484848 {
+	FONT-SIZE: 12px; COLOR: #8f8f8f; LINE-HEIGHT: 23px;TEXT-DECORATION: none;
+}
+.f12_484848 A:link {
+	FONT-SIZE: 12px; COLOR: #8f8f8f; TEXT-DECORATION: none;
+}
+.f12_484848 A:visited {
+	FONT-SIZE: 12px; COLOR: #8f8f8f; TEXT-DECORATION: none;
+}
+.f12_484848 A:hover {
+	FONT-SIZE: 12px; COLOR: #408BAA; TEXT-DECORATION: underline; font-weight:bold;
+}
+
+.f12_408BAA {
+	FONT-SIZE: 12px; COLOR: #408BAA; LINE-HEIGHT: 23px;TEXT-DECORATION: none;
+}
+.f12_408BAA A:link {
+	FONT-SIZE: 12px; COLOR: #408BAA; TEXT-DECORATION: none;
+}
+.f12_408BAA A:visited {
+	FONT-SIZE: 12px; COLOR: #408BAA; TEXT-DECORATION: none;
+}
+.f12_408BAA A:hover {
+	FONT-SIZE: 12px; COLOR: #ff0000; TEXT-DECORATION: underline; 
+}
+
+.f12_0000 {
+	FONT-SIZE: 12px; COLOR: #000000; LINE-HEIGHT: 23px;TEXT-DECORATION: none;
+}
+.f12_0000 A:link {
+	FONT-SIZE: 12px; COLOR: #000000; TEXT-DECORATION: none;
+}
+.f12_0000 A:visited {
+	FONT-SIZE: 12px; COLOR: #000000; TEXT-DECORATION: none;
+}
+.f12_0000 A:hover {
+	FONT-SIZE: 12px; COLOR: #4C9DBD; TEXT-DECORATION: underline; font-weight:bold;
+}
+
+.f12_ffff {
+	FONT-SIZE: 12px; COLOR: #ffffff; LINE-HEIGHT: 18px;TEXT-DECORATION: none;
+}
+.f12_ffff A:link {
+	FONT-SIZE: 12px; COLOR: #ffffff; TEXT-DECORATION: none;
+}
+.f12_ffff A:visited {
+	FONT-SIZE: 12px; COLOR: #ffffff; TEXT-DECORATION: none;
+}
+.f12_ffff A:hover {
+	FONT-SIZE: 12px; COLOR: #ffffff; TEXT-DECORATION: underline; font-weight:bold;
+}
+
+.f14_0000 {
+	FONT-SIZE: 14px; COLOR: #000000; LINE-HEIGHT: 30px;TEXT-DECORATION: none;
+}
+.f14_0000 A:link {
+	FONT-SIZE: 14px; COLOR: #000000; TEXT-DECORATION: none;
+}
+.f14_0000 A:visited {
+	FONT-SIZE: 14px; COLOR: #000000; TEXT-DECORATION: none;
+}
+.f14_0000 A:hover {
+	FONT-SIZE: 14px; COLOR: #000000; TEXT-DECORATION: underline; font-weight:bold;
+}
+
+.f14_ffff {
+	FONT-SIZE: 14px; COLOR: #ffffff; LINE-HEIGHT: 30px;TEXT-DECORATION: none;
+}
+.f14_ffff A:link {
+	FONT-SIZE: 14px; COLOR: #ffffff; TEXT-DECORATION: none;
+}
+.f14_ffff A:visited {
+	FONT-SIZE: 14px; COLOR: #ffffff; TEXT-DECORATION: none;
+}
+.f14_ffff A:hover {
+	FONT-SIZE: 14px; COLOR: #ffffff; TEXT-DECORATION: underline; font-weight:bold;
+}
+
+/*CSS sabrosus style pagination*/
+DIV.sabrosus {
+PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; MARGIN: 3px; PADDING-TOP: 3px; TEXT-ALIGN: right;
+}
+DIV.sabrosus A {
+BORDER-RIGHT: #9aafe5 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #9aafe5 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 2px; BORDER-LEFT: #9aafe5 1px solid; COLOR: #2e6ab1; MARGIN-RIGHT: 2px; PADDING-TOP: 2px; BORDER-BOTTOM: #9aafe5 1px solid; TEXT-DECORATION: none
+}
+DIV.sabrosus A:hover {
+BORDER-RIGHT: #2b66a5 1px solid; BORDER-TOP: #2b66a5 1px solid; BORDER-LEFT: #2b66a5 1px solid; COLOR: #000; BORDER-BOTTOM: #2b66a5 1px solid; BACKGROUND-COLOR: lightyellow
+}
+DIV.pagination A:active {
+BORDER-RIGHT: #2b66a5 1px solid; BORDER-TOP: #2b66a5 1px solid; BORDER-LEFT: #2b66a5 1px solid; COLOR: #000; BORDER-BOTTOM: #2b66a5 1px solid; BACKGROUND-COLOR: lightyellow
+}
+DIV.sabrosus SPAN.current {
+BORDER-RIGHT: navy 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: navy 1px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; PADDING-BOTTOM: 2px; BORDER-LEFT: navy 1px solid; COLOR: #fff; MARGIN-RIGHT: 2px; PADDING-TOP: 0px; BORDER-BOTTOM: navy 1px solid; BACKGROUND-COLOR: #2e6ab1
+}
+DIV.sabrosus SPAN.disabled {
+BORDER-RIGHT: #929292 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #929292 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 2px; BORDER-LEFT: #929292 1px solid; COLOR: #929292; MARGIN-RIGHT: 2px; PADDING-TOP: 1px; BORDER-BOTTOM: #929292 1px solid
+}

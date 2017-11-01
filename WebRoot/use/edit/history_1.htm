@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+<TITLE> </TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function ResetDomain()
+{	var ss=document.domain;						
+	var ii=ss.lastIndexOf('.');
+	if(ii>0)
+	{	if(!isNaN(ss.substr(ii+1)*1))
+			return;
+		ii=ss.lastIndexOf('.',ii-1);
+		if(ii>0)
+			document.domain	=ss.substr(ii+1);
+	}										
+}
+ResetDomain();
+//-->
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+window.onload = function(){
+	var jsFrame = window.parent.frames["jsFrame"];
+	if(!jsFrame){
+		return;
+	}
+	if(jsFrame.GE){
+		jsFrame.fGoHistory();
+	}
+}
+//-->
+</SCRIPT>
+</HEAD>
+<BODY>
+
+</BODY>
+</HTML>

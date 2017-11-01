@@ -1,0 +1,61 @@
+﻿<!--////////////////////////////////////////////////////////////////////////////////
+///名称：多媒休编辑器
+///网址：http://www.avpx.net
+///Edit By Mal
+////////////////////////////////////////////////////////////////////////////////-->
+<HTML><HEAD><TITLE>插入Flash文件</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="style/defaultEditor.css">
+<SCRIPT event="onclick" for="submit" language="JavaScript">
+	var str = "<object classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000'  xcodebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab' width='"+document.getElementById('iwidth').value+"' height='"+document.getElementById('iheight').value+"'><param name='movie' value='"+document.getElementById('path').value+"' /><param name='quality' value='"+document.getElementById('quality').value+"' />";
+	if (document.getElementById('transparent').checked == "True") str += "<param name='wmode' value='transparent' />";
+	str+="<param name='loop' value='"+document.getElementById('isloop').checked+"' /><param name='play' value='"+document.getElementById('autoplay').checked+"' /><embed src='"+document.getElementById('path').value+"' pluginspage='http://www.macromedia.com/go/getflashplayer' type='application/x-shockwave-flash' width='"+document.getElementById('iwidth').value+"' height='"+document.getElementById('iheight').value+"' quality='"+document.getElementById('quality').value+"'></embed></object>";
+  window.returnValue = str;
+  window.close();
+</SCRIPT>
+</HEAD>
+
+<BODY>
+<table cellpadding="0" cellspacing="0" class="modeMain" border="0">
+<tr><td>
+<div class="topTitle" align=left>插入Flash文件</div>
+<TABLE width="280" align="center">
+<TR>
+  <TD height="25" colspan="1" >地址</td>
+  <TD height="25" colspan="3" ><input name="path" id="path"  value="http://" size="35"></td>
+</TR>
+<TR>
+  <TD width="15%" height="25" >宽度  </TD>
+  <TD width="35%" ><input name="iwidth" id="iwidth" onKeyPress="event.returnValue=(event.keyCode>=48)&&(event.keyCode<=57);" value="500" size="4" maxlength="4" onpaste="return !clipboardData.getData('text').match(/\D/)">
+    px</TD>
+  <TD width="15%" >高度</TD>
+  <TD ><input name="iheight" id="iheight" onKeyPress="event.returnValue=(event.keyCode>=48)&&(event.keyCode<=57);" value="300" size="4" maxlength="4" onpaste="return !clipboardData.getData('text').match(/\D/)">
+px </TD>
+</TR>
+<TR><TD height="25" align="left"><label for="isloop"></label>
+    <label for="transparent">品质</label></TD>
+  <TD height="25" align="left"><label for="select"></label>
+    <select name="quality" id="quality">
+      <option value="high">高品质</option>
+      <option value="medium">中品质</option>
+      <option value="low">低品质</option>
+    </select>
+    </TD>
+  <TD height="25" colspan="2" align="left"><input type="checkbox" name="transparent" id="transparent" value="checkbox">
+    <label for="transparent">背景透明</label></TD>
+</TR>
+<TR>
+  <TD height="25" colspan="2" align="left"><input type="checkbox" name="isloop" id="isloop" value="checkbox" checked>
+    <label for="isloop">循环</label></TD>
+  <TD height="25" colspan="2" align="left"><input type="checkbox" name="autoplay" id="autoplay" value="checkbox" checked>
+    <label for="autoplay">自动播放</label>
+    　    </TD>
+</TR>
+<tr><td height="30" colspan="4" align="center"><input name="submit" id="submit" type="submit" value="确定" class="button"> &nbsp;&nbsp;
+<input name="button" id="button" type="button" onClick="window.close();" value="取消" class="button"></td>
+</tr>
+ </TABLE>
+</td>
+</tr></table>
+</BODY>
+</HTML>

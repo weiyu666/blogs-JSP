@@ -1,0 +1,34 @@
+<!--////////////////////////////////////////////////////////////////////////////////
+///名称：多媒休编辑器
+///网址：http://www.avpx.net
+///Edit By Mal
+////////////////////////////////////////////////////////////////////////////////-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>多媒休编辑器---http://www.avpx.net</title>
+<script>
+function chkContent()
+{
+    var html = window.frames["Editor"].window.frames["HtmlEditor"].document.getElementsByTagName("BODY")[0].innerHTML;
+	if(html=='')
+	{
+	    alert('内容不能为空');
+		return false
+	}
+}
+</script>
+</head>
+
+<body>
+<form name="form1" action="?act=content" method="post" onsubmit="return chkContent()">
+<textarea name="content" style="display:none"><P align=center><STRONG></STRONG>&nbsp;</P>
+<P align=center><STRONG>名称：多媒休编辑器</STRONG></P>
+<P align=center>&nbsp;网址：<A href="http://www.avpx.net">http://www.avpx.net</A> </P>
+<P align=center>Edit By Mal</P></textarea>
+<iframe ID="Editor" name="Editor" src="htmltool.htm?ID=content" frameBorder="0" marginHeight="0" marginWidth="0" scrolling="no" style="height:500px;width:660px"></iframe>
+<input type="submit" value="asdf" />
+</form>
+</body>
+</html>

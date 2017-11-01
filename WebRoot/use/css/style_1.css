@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+body{
+	padding:0;
+	margin:0;
+	color:#000000;
+
+}
+
+img{ border:0px;}
+
+.f12_000 {
+	FONT-SIZE: 12px; COLOR: #000000; TEXT-DECORATION: none;
+}
+.f12_000 A:link {
+	FONT-SIZE: 12px; COLOR: #000000; TEXT-DECORATION: none;
+}
+.f12_000 A:visited {
+	FONT-SIZE: 12px; COLOR: #000000; TEXT-DECORATION: none;
+}
+.f12_000 A:hover {
+	FONT-SIZE: 12px; COLOR: #666666; TEXT-DECORATION: underline; 
+}
+
+.f12_t {
+	FONT-SIZE: 12px; COLOR: #000000; TEXT-DECORATION: none; line-height:24px;
+}
+.f12_t A:link {
+	FONT-SIZE: 12px; COLOR: #000000; TEXT-DECORATION: none;
+}
+.f12_t A:visited {
+	FONT-SIZE: 12px; COLOR: #000000; TEXT-DECORATION: none;
+}
+.f12_t A:hover {
+	FONT-SIZE: 12px; COLOR: #666666; TEXT-DECORATION: underline; 
+}
+
+.f14_000 {
+	FONT-SIZE: 14px; COLOR: #000000; TEXT-DECORATION: none;
+}
+.f14_000 A:link {
+	FONT-SIZE: 14px; COLOR: #000000; TEXT-DECORATION: none;
+}
+.f14_000 A:visited {
+	FONT-SIZE: 14px; COLOR: #000000; TEXT-DECORATION: none;
+}
+.f14_000 A:hover {
+	FONT-SIZE: 14px; COLOR: #000000; TEXT-DECORATION: none; 
+}
+
+.f14_ff {
+	FONT-SIZE: 14px; COLOR: #ffffff; TEXT-DECORATION: none;
+}
+.f14_ff A:link {
+	FONT-SIZE: 14px; COLOR: #ffffff; TEXT-DECORATION: none;
+}
+.f14_ff A:visited {
+	FONT-SIZE: 14px; COLOR: #ffffff; TEXT-DECORATION: none;
+}
+.f14_ff A:hover {
+	FONT-SIZE: 14px; COLOR: #00FBFF; TEXT-DECORATION: none; text-decoration:underline;
+}
+
+.ftt {
+	FONT-SIZE: 24px; COLOR: #ffffff; TEXT-DECORATION: none;
+}
+.ftt A:link {
+	FONT-SIZE: 24px; COLOR: #ffffff; TEXT-DECORATION: none;
+}
+.ftt A:visited {
+	FONT-SIZE: 24px; COLOR: #ffffff; TEXT-DECORATION: none;
+}
+.ftt A:hover {
+	FONT-SIZE: 24px; COLOR: #ffffff; TEXT-DECORATION: none; 
+}
+
+

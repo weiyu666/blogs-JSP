@@ -1,0 +1,46 @@
+﻿<!--////////////////////////////////////////////////////////////////////////////////
+///名称：多媒休编辑器
+///网址：http://www.avpx.net
+///Edit By Mal
+////////////////////////////////////////////////////////////////////////////////-->
+<HTML><HEAD><TITLE>插入网上多媒体文件</TITLE>
+<link rel="stylesheet" type="text/css" href="style/defaultEditor.css">
+<SCRIPT event="onclick" for="submit" language="JavaScript">
+  var mediaType=document.getElementById('meidaType');
+if(mediaType=='wmv' || mediaType=='avi' || mediaType=='asf'){
+  var str = "<object classid='clsid:22D6F312-B0F6-11D0-94AB-0080C74C7E95' width="+document.getElementById('iwidth').value+" height="+document.getElementById('iheight').value+"><param name=Filename value="+document.getElementById('path').value+"><param name='BufferingTime' value='5'><param name='AutoSize' value='-1'><param name='AnimationAtStart' value='-1'><param name='AllowChangeDisplaySize' value='-1'><param name='ShowPositionControls' value='0'><param name='TransparentAtStart' value='1'><param name='ShowStatusBar' value='1'></object>";
+}else{
+  var str = "<object classid='clsid:166B1BCA-3F9C-11CF-8075-444553540000' codebase='http://download.macromedia.com/pub/shockwave/cabs/director/sw.cab#version=10,1,1,0' width="+document.getElementById('iwidth').value+" height="+document.getElementById('iheight').value+">";
+  str+="<param name='src' value='"+document.getElementById('path').value+" />";
+  str+="<embed src='"+document.getElementById('path').value+" pluginspage='http://www.adobe.com/shockwave/download/' width="+document.getElementById('iwidth').value+" height="+document.getElementById('iheight').value+"></embed></object>";
+}
+  window.returnValue = str;
+  window.close();
+</SCRIPT>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></HEAD>
+<BODY>
+<table cellpadding="0" cellspacing="0" class="modeMain" border="0">
+<tr><td>
+<div class="topTitle" align=left>插入网上多媒体文件</div>
+<TABLE width="280" align="center">
+<TR><TD height="25" >地址：<INPUT id="path" size="35"  value="http://"></td></TR>
+<TR><TD height="25" >宽度：<INPUT id="iwidth"  onpaste="return !clipboardData.getData('text').match(/\D/)" onKeyPress="event.returnValue=(event.keyCode>=48)&&(event.keyCode<=57);" value="500" size="4" maxlength="4"> px &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高度：<INPUT id="iheight" onpaste="return !clipboardData.getData('text').match(/\D/)" onKeyPress="event.returnValue=(event.keyCode>=48)&&(event.keyCode<=57);" value="300" size="4" maxlength="4"> px </TD></TR>
+<TR><TD height="25">支持格式为：
+  <label>
+  <select name="meidaType" id="meidaType">
+    <option value="mp3" selected>mp3</option>
+    <option value="wma">wma</option>
+    <option value="rm">rm</option>
+    <option value="avi">avi</option>
+    <option value="wmv">wmv</option>
+    <option value="asf">asf</option>
+  </select>
+  </label></TD></TR>
+<tr><td height="25" align="center"><input name="submit" type="submit" id="Ok" value="确定" class="button"> &nbsp;&nbsp;
+<input name="close" id="close" type="button" onClick="window.close();" value="取消" class="button"></td>
+</tr>
+ </TABLE>
+</td>
+</tr></table>
+</BODY>
+</HTML>
